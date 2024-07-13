@@ -1,0 +1,91 @@
+#price {
+
+
+    input {
+        direction: ltr;
+    }
+       
+
+.range {
+  $track-height: 12px;
+  $track-color-fill: #FEEB88;
+  $track-color-background: #F3F3F3;
+  $thumb-color: #F3F3F3;
+  $thumb-size: $track-height * 3;
+
+  @mixin rangeThumb {
+    appearance: none;
+    width: $thumb-size;
+    height: $thumb-size;
+    border-radius: 50%;
+    background: $thumb-color;
+    cursor: pointer;
+    border: none;
+    box-shadow: 20px 20px 20px 0px #ffffff inset, -20px -20px 50px 0px #CDCDCD inset, 10px 20px 50px 0px #3d3d3d ;
+  }
+
+  @mixin rangeTrack {
+    background: linear-gradient(to left,
+    $track-color-background 100%,
+    $track-color-fill 0%);
+    height: $track-height;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 20px;
+    margin: $thumb-size / 1.5 0;
+    appearance: none;
+    // box-shadow: -10px -10px 120px 0px #eeeeee inset;
+  }
+
+  @include rangeTrack;
+
+  [type="range"] {
+    appearance: none;
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: $thumb-size;
+    &:focus {
+      outline: none;
+    } // Track
+    &::-webkit-slider-runnable-track {
+      background: transparent;
+    }
+    &::-moz-range-track {
+      background: transparent;
+    } // Thumb
+    &::-webkit-slider-thumb {
+      @include rangeThumb;
+    }
+    &::-moz-range-thumb {
+      @include rangeThumb;
+    }
+    &::-ms-thumb {
+      @include rangeThumb;
+    } // IE Styles
+    &::-ms-fill-lower {
+      background: $track-color-fill;
+    }
+    &::-ms-fill-upper {
+      background: $track-color-background;
+    }
+    &::-ms-track {
+      color: transparent;
+      border: 0 solid transparent;
+      background: transparent;
+    }
+    &::-ms-tooltip {
+      display: none;
+    }
+  }
+}
+
+
+}
