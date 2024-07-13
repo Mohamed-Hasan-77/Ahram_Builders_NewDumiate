@@ -4,6 +4,7 @@ import Info from "../Info/Info";
 import Navbar from "../Navbar/Navbar";
 import Price from "../Price/Price";
 import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
                 <Projects/>
                 {/* <Features/> */}
                 <Price/>
+                <Contact/>
     </>
 
 }
