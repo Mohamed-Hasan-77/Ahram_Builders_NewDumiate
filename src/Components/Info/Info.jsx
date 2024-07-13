@@ -7,6 +7,8 @@ export default function Info() {
   return (
     <div className='bg-black text-black py-10'>
         <div className="container flex justify-center items-center flex-wrap ">
+
+        <h2 className=' text-primary font-bold text-3xl md:text-4xl text-center py-7'> تفاصيل مشروع دمياط الجديد</h2>
             
             <div className="box w-full lg:w-1/2  lg:p-5  ">
                 <div className="wrapper flex justify-between flex-wrap  shadow-btnShadowSec rounded-2xl bg-secondery2 ">
