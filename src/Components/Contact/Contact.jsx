@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <div id='Contact' className='bg-black' >
         
-        <div className="container flex items-center justify-between flex-wrap py-16">
+        <div className="container flex items-center justify-between flex-wrap py-16 ">
 
 
         <h3 className='text-center text-primary text-5xl font-bold mb-10 block w-full'> تواصل معنا  </h3>
@@ -41,12 +41,12 @@ export default function Contact() {
                     <label for="email" className="form__label"> Your Email </label>
                 </div>
 
-                <div className="form__group field mt-7 w-1/2 ">
+                <div className="form__group field mt-7 w-full ">
                     <PhoneInput country={'eg'} placeholder=" Phone Number " value={phoneNumber} inputProps={{ required: true, }} className=" block w-full p-5  appearance-none focus:outline-none  " required="required" onChange={handlePhoneNumber}  />
                     <label for="phoneNumber" className="form__label"> Phone Number </label>
                 </div>
 
-                <div className="form__group field mt-7 w-1/2 ">
+                {/* <div className="form__group field mt-7 w-1/2 ">
                     <select className="appearance-none flex relative w-full bg-transparent  border-b outline-none focus:outline-none p-3 ">
                         <option selected className=''>  Interested in </option>
                         <option className='text-black'> 1 </option>
@@ -54,7 +54,7 @@ export default function Contact() {
                         <option className='text-black'> 3</option>
                     </select>
                     <img src={arrow} className='absolute left-7 w-7 top-1/3' alt="arrow" />
-                </div>
+                </div> */}
 
                 <div className="form__group field mt-7 w-full ">
                     <textarea  className="form__field w-full p-5"  autoComplete="email"  placeholder=" Your Email " />

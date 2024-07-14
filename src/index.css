@@ -42,3 +42,12 @@ body {
     height: 4.1rem;
   }
 }
+
+
+#footer {
+  background-color: white;
+  background-image: url("./assets/bg1.png");
+  background-position: bottom;
+  background-size: cover;
+ background-repeat: no-repeat;
+}

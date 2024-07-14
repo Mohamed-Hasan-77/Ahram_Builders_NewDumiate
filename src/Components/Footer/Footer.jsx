@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import logo from "../../assets/Logo3.png"
-// import facebook from "../../assets/social/facebook.png"
-// import instagram from "../../assets/social/instagram.png"
-// import tiktok from "../../assets/social/tiktok.png"
+import insta from "../../assets/social-instagram-svgrepo-com (1).svg"
+import youtube from "../../assets/youtube-svgrepo-com.svg"
+import whatsapp from "../../assets/whatsapp-svgrepo-com.svg"
+import logo from "../../assets/logo3.png"
+
 
 export default function Footer() {
 
@@ -12,31 +12,32 @@ export default function Footer() {
 
 
     return (
-        <footer id="footer" className="p-12 dir-ltr text-center text-white bg-gray-950">
-            <div className="logoImg flex justify-center">
-                <img src={logo} className="w-32" alt="logo" />
+        <footer id="footer" className="py-12 dir-ltr text-center pt-20">
+            <div className=" container top flex justify-between items-center flex-wrap ">
+                <div className="left w-full md:w-1/3 mt-7 flex flex-col items-center">
+                    <h4 className="text-3xl font-bold"> Follow Us </h4>
+                    <div className="social p-3   flex  items-center gap-3">
+                        <a href="#" className="bg-black flex justify-center items-center rounded-xl p-2 "> <img src={insta} className="w-5 " alt="insta" /> </a>
+                        {/* <a href="#" className="bg-black flex justify-center items-center rounded-xl p-2 "> <img src={youtube} className="w-5 " alt="insta" /> </a> */}
+                        <a href="#" className="bg-black flex justify-center items-center rounded-xl p-2 "> <img src={whatsapp} className="w-5 " alt="insta" /> </a>
+                    </div>
+                </div>
+
+                <div className="center w-full md:w-1/3 mt-7 lg:pr-20 ">
+                    <h4 className="text-3xl font-bold"> Contact Us </h4>
+                    <p className="mt-3 text-xl ">  نهاية شارع الصعيدي القديم دمياط الجديدة اعلي Pizza Party, Dumyat Al Jadidah, Egypt </p>
+                    <p className="mt-3 text-xl"> 01000303030 </p>
+                </div>
+
+                <div className="right w-full md:w-1/3 mt-7">
+                    <img src={logo} alt="logo" />
+                </div>
             </div>
-            {/* <p  >
-                <Link to={"/PrivacyPolicy"} ><span > {t("footer_links_privacyPolicy")}   </span></Link>
-                <span className="mx-1" > | </span>
-                <Link to={"/RefundPolicy"} ><span >   {t("footer_links_refundPolicy")} </span></Link>
-                <span className="mx-1" > | </span>
-                <Link to={"/TermsConditions"} ><span > {t("footer_links_termsConditions")}  </span></Link>
-                <span className="mx-1" > | </span>
-                <Link to={"/ContactUs"}><span>{t("footer_links_contactUs")}</span></Link>
-            </p> */}
 
-            {/* <div className="socia flex justify-center gap-x-4 my-4"> 
-                <a href="https://www.facebook.com/GR7.fit"  target="_blanck" ><img src={facebook} className="w-7" alt="facebook" /></a>
-                <a href="https://www.instagram.com/gr7.fit"  target="_blanck" ><img src={instagram} className="w-7" alt="instagram" /></a>
-                <a href="https://www.tiktok.com/@gr7.fit"  target="_blanck" ><img src={tiktok} className="w-7" alt="tiktok" /></a>
-            </div> */}
-
-            <p className="mt-2 flex items-center gap-3 justify-center flex-wrap">  {t("footer_copyright")} |
-
-                <img src={logo} className="w-14" alt="logo" />
-            </p>
-
+            <div className="copyRight py-7 mt-10 border-t border-gray-400 text-center">
+                    © 2024  | All Rights Reserved to xxxxxxxxxxxx 
+            </div>
+            
         </footer>
     )
 }
