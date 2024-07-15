@@ -1,0 +1,44 @@
+
+
+.sliderInnerBox {
+    img {
+        max-height:500px ;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-container  {
+        max-height: 290px;
+    }
+    .sliderInnerBox {
+        img {
+            max-height:200px ;
+        }
+    }
+}
+
+.slick-dots li {
+    @media (max-width: 768px) {
+        margin-right: 0 ;
+        margin-left: 0 ;
+    }
+    
+}
+
+
+.slick-dots li button:before {
+    content: "";
+    background: #FEEB88;
+    top: 10px;
+    width: 10px;
+    margin:  0 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.slick-dots li.slick-active button:before {
+    width: 20px;
+}
+
+
+

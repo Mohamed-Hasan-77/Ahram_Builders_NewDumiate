@@ -62,7 +62,7 @@ useEffect(()=> {
 }, [])
 
   return (
-    <div id='price' className='py-16 bg-black'>
+    <div id='price' className='pb-16 pt-7 md:pt-16 bg-black'>
          <div className="container">
             <h2 className=' font-bold text-3xl md:text-5xl  mb-24 text-primary  pr-10'> اعرف سعر بيتك  </h2>
 
@@ -121,7 +121,7 @@ useEffect(()=> {
                  </div>
 
                 <div className="left w-full xl:w-1/2 flex flex-wrap items-center justify-center  text-2xl mt-10 lg:mt-0 ">
-                    <div className="box w-full  lg:w-1/2 p-5  font-bold ">
+                    {/* <div className="box w-full  lg:w-1/2 p-5  font-bold ">
                       <div className=" bg-white rounded-3xl  relative flex justify-between shadow-btnShadowSec">
                         
                               <select className="appearance-none flex relative w-full rounded-3xl py-10 px-12 -ml-4">
@@ -134,7 +134,7 @@ useEffect(()=> {
                               </div>
 
                       </div>
-                    </div>
+                    </div> */}
 
                     <div className="box w-full  lg:w-1/2 p-5 ">
                       <div className="wrapper shadow-btnShadowSec bg-white rounded-3xl text-xl lg:text-3xl py-4 px-12 relative flex flex-col items-center justify-center">
@@ -160,7 +160,7 @@ useEffect(()=> {
                     </div>
 
 
-                    <div className="box w-full  p-5 ">
+                    <div className="box w-full  lg:w-1/2  p-5 ">
                       <div className="wrapper shadow-btnShadowSec bg-white rounded-3xl text-xl lg:text-3xl py-4 px-12 relative flex flex-col items-center justify-center">
                         <h3 className='font-bold'> الاجمالي </h3>
                         <p className='mt-3'>  6,400,000 EG   </p>

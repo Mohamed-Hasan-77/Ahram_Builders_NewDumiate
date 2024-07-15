@@ -51,7 +51,7 @@ export default function Hero() {
                         <h1 className="text-blueColor text-3xl md:text-4xl lg:text-5xl  font-bold "> مشروع دمياط الجديد</h1>
                         <h3 className=" text-3xl md:text-4xl font-bold mt-5 ">  في القرية الذكية بدمياط الجديدة</h3>
                         <div className="btn w-full flex justify-center mt-14"> 
-                            <a href="#" data-scroll-to="Introduction ">
+                            <a href="#" data-scroll-to="Contact">
                                 <button className="py-2 px-7 sm:px-16 flex justify-center items-center gap-3 rounded-full bg-primary shadow-btnShadow text-black font-bold mt-3" > 
                                     <span style={{boxShadow: "5px 6px 11px 0px inset #d3c474, -4px -4px 30px 0px inset #ffffff"}} className="flex flex-col items-center justify-center p-2 rounded-full w-10 h-10 " > 
                                         <img src={arrow} className=" invert w-7 -mb-2" alt="arrow" />  

@@ -6,10 +6,9 @@ import Price from "../Price/Price";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
+import Sevices from "../Sevices/Sevices";
 
 export default function Home() {
-
-
 
 
 
@@ -20,6 +19,7 @@ export default function Home() {
                 <Info/>
                 <Projects/>
                 {/* <Features/> */}
+                {/* <Sevices/> */}
                 <Price/>
                 <Contact/>
                 <Footer/>

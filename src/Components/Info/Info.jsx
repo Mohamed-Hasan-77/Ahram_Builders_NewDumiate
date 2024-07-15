@@ -5,9 +5,9 @@ import imgBox4 from "../../assets/Rectangle 144 (3).png"
 
 export default function Info() {
   return (
-    <div className='bg-black text-black py-10'>
+    <div id='Info' className='bg-black text-black py-10'>
 
-      <h2 className=' text-primary font-bold text-3xl md:text-4xl text-center py-7 pr-16'> تفاصيل مشروع دمياط الجديد</h2>
+      <h2 className=' text-primary font-bold text-2xl md:text-4xl text-center py-7 md:pr-16'> تفاصيل مشروع دمياط الجديد</h2>
 
 
         <div className="container flex justify-center items-center flex-wrap ">
