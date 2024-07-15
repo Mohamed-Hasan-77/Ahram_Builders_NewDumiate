@@ -13,6 +13,7 @@ import axios from 'axios';
 
 export default function Contact() {
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [sucMsg, setSucMsg] = useState(false);
 
 
     function handlePhoneNumber(value) {
@@ -32,7 +33,7 @@ export default function Contact() {
         // try and catch if you are not sure if there will be an error with api 
         try {
             let { data } = await axios.post("https://sheetdb.io/api/v1/di6m1d7w47yqw", userData);
-
+            setSucMsg(true)
             // catch the error 
         } catch (err) {
             // console.log(err.response);
@@ -46,8 +47,8 @@ export default function Contact() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
-
+        setSucMsg(false)
+        
         let userInfo = {};
 
 
@@ -124,7 +125,11 @@ export default function Contact() {
                     <label for="email" className="form__label"> ملاحظات </label>
                 </div>
 
-
+                {sucMsg && <>
+                    
+                    <div className="sucMsg mt-2 text-green-500 w-full text-center"> تم الارسال بنجاح سيتم التواصل معكم قريبا  </div>
+                    
+                </>}
 
                 <div className="btn flex justify-center mt-7 w-full">
                     <button  className="px-14 py-2 rounded-2xl  font-bold  text-black bg-primary flex items-center justify-center gap-3 ">
